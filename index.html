@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    .attribution { font-size: 11px; text-align: center; margin-top: 15px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .outer {
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+      height: 520px;
+      width: 320px;
+      background-color: white;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: absolute;
+      border-radius: 15px;
+      flex-direction: column;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .outer .qr-code {
+      position: absolute;
+      border-radius: 15px;
+    }
+    .outer .text-element-1{
+      position: relative;
+      text-align: center;
+      font-family: "Outfit", sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+      margin-top: 315px;
+    }
+    .outer .text-element-2{
+      color: hsl(220, 15%, 55%);
+      font-family: "Outfit", sans-serif;
+      text-align: center;
+      margin-top: 15px;
+    }
+    
+  </style>
+</head>
+<body style="background-color: lightgray">
+  <div class="outer">
+    <img class ="qr-code" src="images/image-qr-code.png" alt="QR code" width="280px" height="300px">
+    <div class="text-element-1">Improve your front-end skills by building projects</div>
+    <div class="text-element-2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</div>
+    <div class="attribution" >
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/bhavanapallempati">Bhavana Pallempati</a>.
+    </div>
+  </div>
+</body>
+</html>
